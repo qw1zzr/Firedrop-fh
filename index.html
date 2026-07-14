@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FireDrop</title>
+
+    <link
+        rel="stylesheet"
+        href="assets/css/style.css"
+    >
+</head>
+
+
+<body>
+
+<main class="container">
+
+<section class="card">
+
+
+    <h1>FireDrop</h1>
+
+    <p class="subtitle">
+        Fast file uploader
+    </p>
+
+
+
+    <!-- DROP AREA -->
+
+    <div
+        class="drop-zone"
+        id="dropZone"
+    >
+
+        <div class="drop-icon">
+            +
+        </div>
+
+
+        <p>
+            Drop file here
+        </p>
+
+
+        <span>
+            or choose manually
+        </span>
+
+
+        <button
+            class="secondary-btn"
+            id="attachBtn"
+            type="button"
+        >
+            Attach files
+        </button>
+
+
+        <input
+            type="file"
+            id="fileInput"
+            hidden
+        >
+
+    </div>
+
+
+
+    <!-- SELECTED FILES -->
+
+    <div class="file-section">
+
+
+        <div
+            class="error-box"
+            id="errorBox"
+        >
+            Select file first!
+        </div>
+
+
+
+        <div class="file-header">
+
+
+            <div class="file-info-block">
+
+                <span class="small-label">
+                    Selected files
+                </span>
+
+
+                <p id="fileInfo">
+                    No files selected
+                </p>
+
+            </div>
+
+
+
+            <div class="multi-box">
+
+                <span>
+                    Multi upload
+                </span>
+
+
+                <button
+                    id="multiToggle"
+                    class="toggle"
+                    type="button"
+                    aria-label="Toggle multi upload"
+                >
+
+                    <span class="toggle-circle">
+                        I
+                    </span>
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- TOKEN -->
+
+    <div class="input-group">
+
+
+        <label for="tokenInput">
+            Upload key
+        </label>
+
+
+
+        <div class="token-field">
+
+
+            <div class="token-content">
+
+
+                <span class="prefix">
+                    github_pat_
+                </span>
+
+
+                <input
+                    id="tokenInput"
+                    type="password"
+                    placeholder="token"
+                    autocomplete="off"
+                    spellcheck="false"
+                >
+
+
+            </div>
+
+
+
+            <button
+                class="eye-btn"
+                id="showToken"
+                type="button"
+                aria-label="Show or hide upload key"
+            >
+
+                <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                >
+
+                    <path
+                        d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"
+                    />
+
+                    <circle
+                        cx="12"
+                        cy="12"
+                        r="3"
+                    />
+
+                </svg>
+
+            </button>
+
+
+        </div>
+
+
+
+        <div
+            class="key-status"
+            id="keyStatus"
+        ></div>
+
+
+    </div>
+
+
+
+    <!-- UPLOAD STATE -->
+
+    <div
+        class="upload-area"
+        id="uploadArea"
+    >
+
+        <button
+            class="upload-btn"
+            id="uploadBtn"
+            disabled
+        >
+            Upload
+        </button>
+
+
+
+        <div
+            class="progress-section"
+            id="progressSection"
+        >
+
+            <div class="progress-header">
+
+                <span
+                    class="progress-file"
+                    id="progressFile"
+                >
+                    file
+                </span>
+
+
+                <span
+                    class="progress-percent"
+                    id="progressPercent"
+                >
+                    0%
+                </span>
+
+            </div>
+
+
+
+            <div class="progress-track">
+
+                <div
+                    class="progress-bar"
+                    id="progressBar"
+                ></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- SUCCESS RESULT -->
+
+    <div
+        class="result-section"
+        id="resultSection"
+    >
+
+        <div class="success-title">
+            Successful upload!
+        </div>
+
+
+        <div
+            class="result-list"
+            id="resultList"
+        ></div>
+
+    </div>
+
+
+
+    <div class="creator">
+        created by qw1zzr
+    </div>
+
+
+</section>
+
+</main>
+
+
+
+<script src="assets/js/github.js"></script>
+<script src="assets/js/uploader.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
