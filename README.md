@@ -13,6 +13,6 @@ Upload your files, share links instantly, and keep control over your data with a
 
 ## Access
 
-Firedrop is currently available through invitation tokens only.  
-Public access and open registration will be available soon.
-
+Firedrop is currently in private beta.
+Access is available through invitation tokens only.
+Public access will be available soon.
