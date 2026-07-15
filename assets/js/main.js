@@ -196,7 +196,7 @@ function handleFiles(files){
     if(oversizedFile){
 
         showError(
-            "Files over 30 MB are not supported."
+            "Files over 30 MB aren't supported yet. Higher limits coming soon."
         );
 
         return;
